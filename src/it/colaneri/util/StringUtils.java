@@ -127,16 +127,4 @@ public class StringUtils {
 		return StringUtils.replaceAll(source, what, "");
 	}
 
-	/**
-	 * Rimuove da source tutte le occorrenze di what. La rimozione' e' Key-Sensitive
-	 * @param source La stringa su cui operare
-	 * @param what La stringa che deve essere rimossa
-	 * @return La stringa ottenuta dalla rimozione
-	 * @throws IllegalArgumentException Se qualunque parametro e' null e se what e' stringa vuota
-	 * @deprecated Usare removeAll
-	 */
-	public static String remove(String source, String what) {
-		return StringUtils.removeAll(source, what);
-	}
-
 }
