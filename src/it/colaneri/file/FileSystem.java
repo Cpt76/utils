@@ -9,7 +9,6 @@ package it.colaneri.file;
 import it.colaneri.time.Timestamp;
 
 import java.io.*;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 import java.util.StringTokenizer;

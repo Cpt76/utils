@@ -1,6 +1,5 @@
 package it.colaneri.time;
 
-import java.lang.annotation.Inherited;
 import java.text.SimpleDateFormat;
 
 public class Timestamp {

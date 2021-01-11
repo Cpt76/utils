@@ -77,14 +77,7 @@ public class StringConverter{
      */
     public static boolean toPrimitiveBoolean(String value) throws CheckException {
 
-        String msg=
-                """
-                        il valore deve rappresentare un boolean in uno dei modi seguenti:\s
-                        - yes | no (case insensitive)\s
-                        - true | false (case insensitive)\s
-                        - si | no (case insensitive)\s
-                        - 1 | 0\s
-                        """;
+        String msg="il valore deve rappresentare un boolean in uno dei modi seguenti:\n - yes | no (case insensitive)\n - true | false (case insensitive)\n - si | no (case insensitive)\n - 1 | 0\n";
 
         if(value==null)
             throw new CheckException(msg);
