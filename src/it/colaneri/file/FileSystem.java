@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
 
 ///////////////////////////////////////////////////////////////////////////
 /** Questa classe offre metodi static per effettuare le
- * operazioni pi√π comuni su filesystem
+ * operazioni pi˘ comuni su filesystem
  */
 public class FileSystem{
     /** Dimensione del buffer di trasferimento standard */
@@ -24,7 +24,7 @@ public class FileSystem{
     ///////////////////////////////////////////////////////////////////////
     /** Crea recursivamente le directory contenute in un path di file.
      * Il path deve essere di un file oppure terminare col
-     * carattere /; il separatore √® /
+     * carattere /; il separatore Ë /
      * @return La directory creata o null in caso di errore
      * @param path Il path del quale bisogna creare le directory
      */
@@ -128,15 +128,15 @@ public class FileSystem{
 
     ///////////////////////////////////////////////////////////////////////
     /** Sposta un file appendendo un timestamp in testa al nome
-     * Se la stringa di timestamp √® null si comporta esattamente come
+     * Se la stringa di timestamp Ë null si comporta esattamente come
      * una normale move @link FileSystem#move(File in, File out)
      * @param in File sorgente
      * @param out File destinazione
      * @param timestampFormat formato del timestamp da appendere
      * @throws FileNotFoundException File sorgente non trovato
      * @throws IOException Impossibile effettuare la copia
-     * @return true se √® stato possibile cancellare il
-     * file sorgente; false se non √® stato possibile.
+     * @return true se Ë stato possibile cancellare il
+     * file sorgente; false se non Ë stato possibile.
      */
     public static boolean move(File in, File out, String timestampFormat)
         throws FileNotFoundException, IOException{
@@ -165,18 +165,18 @@ public class FileSystem{
     ///////////////////////////////////////////////////////////////////////
     /** Copia la directory sorgente nella directory destinazione, creando
      * la directory destinazione se necessario. Si noti che la procedura
-     * pu√≤ effettuare la copia integrale della directory sorgente,
+     * puÚ effettuare la copia integrale della directory sorgente,
      * riproducendo in quella destinazione le stesse sottodirectory
-     * e gli stessi file (modalit√† recursiva), oppure pu√≤ limitarsi
+     * e gli stessi file (modalit‡† recursiva), oppure puÚ limitarsi
      * a copiare i soli file presenti nella directory sorgente,
-     * ignorando le subdirectory (modalit√† non recursiva).
+     * ignorando le subdirectory (modalit‡† non recursiva).
      * Utilizza per la copia dei file la
      * {@link FileSystem#DEFAULTBUFFERSIZE}
      * @param in La directory sorgente.
-     * @param out La directory destinazione. Questa pu√≤ anche
+     * @param out La directory destinazione. Questa puÚ anche
      * non esistere fisicamente, nel qual caso
      * viene creata.
-     * @param recursive Imposta la modalit√† recursiva o quella
+     * @param recursive Imposta la modalit‡† recursiva o quella
      * non recursiva.
      * @throws FileNotFoundException Sollevata se la directory sorgente
      * non esiste
